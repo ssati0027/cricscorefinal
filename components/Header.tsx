@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 interface HeaderProps {
@@ -15,7 +16,7 @@ const Header: React.FC<HeaderProps> = ({ onHome, title, syncStatus }) => {
             onClick={onHome} 
             className="text-base sm:text-lg font-bebas tracking-tight cursor-pointer text-white flex items-center gap-1.5"
           >
-            <span className="text-emerald-400 text-xl">🏏</span> CRICSCORE <span className="text-emerald-400 font-normal">PRO</span>
+            <span className="text-emerald-400">🏏</span> CRICSCORE <span className="text-emerald-400 font-normal">PRO</span>
           </h1>
           {syncStatus && (
             <div className="hidden xs:flex items-center gap-1 bg-black/20 px-1.5 py-0.5 rounded text-[7px] font-bold uppercase tracking-widest text-emerald-400/70">
