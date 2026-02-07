@@ -160,14 +160,14 @@ const LiveScorecard: React.FC<LiveScorecardProps> = ({ match, onToggleScoreboard
                 onClick={() => setShowFullHistory(false)}
                 className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-white text-xl"
               >
-                ×
+                x
               </button>
            </div>
            
            <div className="flex-1 overflow-y-auto no-scrollbar space-y-6">
               {groupedOvers.length === 0 ? (
                 <div className="h-full flex flex-col items-center justify-center text-slate-600 opacity-50">
-                  <span className="text-4xl mb-4">🏏</span>
+                  <span className="text-4xl mb-4">🏏</span>
                   <p className="font-bold uppercase tracking-widest text-[10px]">No balls recorded yet</p>
                 </div>
               ) : (
